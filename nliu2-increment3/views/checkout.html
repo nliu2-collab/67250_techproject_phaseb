@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Checkout</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body>
+
+<img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo"> 
+
+<nav>
+<a href="../index.html">Home</a>
+<a id="navselected" href="/views/explore.html">Explore</a>
+<a href="/views/exhibitions.html">Exhibitions</a>
+<a href="/views/tickets.html">Tickets</a>
+<a href="/views/checkout.html">Checkout</a>
+</nav>
+
+<form>
+    <label>Name:</label>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required><br><br>
+
+    <label>Ticket Quantity:</label>
+    <input type="number" min="1" required><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<p id="copyYear"></p>
+
+onload = "addYear()"
+
+</body>
+</html>
