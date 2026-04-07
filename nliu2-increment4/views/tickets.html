@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Buy Tickets</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+            <p class="site-title">Tickets & Visits</p>
+        </header>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+        <main class="main">
+            <table>
+                <tr>
+                    <th>Ticket Type</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Adult</td>
+                    <td>$18</td>
+                    <td>General admission for ages 18 and over. Under 18 free of charge.</td>
+                </tr>
+                <tr>
+                    <td>Student</td>
+                    <td>$10</td>
+                    <td>Student ID required for purchase.</td>
+                </tr>
+                <tr>
+                    <td>Member</td>
+                    <td>$15</td>
+                    <td>Member ID required.</td>
+                </tr>
+            </table>
+        </main>
+        <figure class="main_figure">
+            <figcaption>Book your ticket and plan a visit to the museum.</figcaption>
+        </figure>
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
