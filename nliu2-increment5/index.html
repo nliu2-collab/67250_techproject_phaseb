@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <meta charset="UTF-8">
+    <meta name="author" content="Your name">
+    <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+    <meta name="description" content="MonoMuse website redesign project">
+    <title>MonoMuse</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="./static/script.js" defer></script>
+</head>
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <p class="site-title">MonoMuse Museum</p>
+        </header>
+        <nav class="nav_bar">
+            <a href="index.html">Home</a>
+            <a href="views/explore.html">Explore</a>
+            <a href="views/exhibitions.html">Exhibitions</a>
+            <a href="views/tickets.html">Buy Tickets</a>
+            <a href="views/checkout.html">Checkout</a>
+        </nav>
+        <main class="main">
+            <p>Hi there! Welcome to our museum. It is the largest museum in the greater Pittsburgh area.</p>
+            <p>MonoMuse is a contemporary museum dedicated to exploring the intersection of art, 
+                technology, and human creativity. Through immersive exhibitions, interactive installations, 
+                and rotating collections, MonoMuse invites visitors to discover how digital innovation is 
+                transforming the way we create, experience, and understand art. Whether you are a first-time 
+                visitor or a returning member, our exhibitions offer new perspectives on the role of technology 
+                in culture and everyday life. Plan your visit to experience cutting-edge exhibitions, hands-on 
+                experiences, and events designed to inspire curiosity and creativity.</p>
+            <a href="views/tickets.html" class="cta">Buy Tickets</a>
+            <p id="shortIntro">
+                Hi there! Welcome to our museum. It is the largest museum in the greater Pittsburgh area.
+            </p>
+
+            <p id="longIntro" style="display:none;">
+                MonoMuse is a contemporary museum dedicated to exploring the intersection of art, technology, and human creativity...
+            </p>
+
+            <button id="readMore">Read More</button>
+            <button id="readLess" style="display:none;">Read Less</button>
+        <div id="map"></div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gMuKCAiovsk?si=E3rlp0w001nICzAq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <figure class="main_figure">
+            <figcaption>Discover contemporary art, digital storytelling, and museum experiences built for curious visitors.</figcaption>
+        </figure>
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+        </main>
+    </div>
+</body>
+</html>

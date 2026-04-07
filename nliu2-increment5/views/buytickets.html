@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Buy Tickets</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body onload="addYear()">
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+        <p class="site-title">MonoMuse Museum</p>
+    </header>
+
+    <!-- NAV -->
+    <nav class="nav_bar">
+        <a href="../index.html">Home</a>
+        <a href="explore.html">Explore</a>
+        <a href="exhibitions.html">Exhibitions</a>
+        <a href="tickets.html">Buy Tickets</a>
+        <a href="checkout.html">Checkout</a>
+    </nav>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- Ticket Pricing -->
+        <h2>Ticket Prices</h2>
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Adult</td>
+                <td>$18</td>
+                <td>18+ admission</td>
+            </tr>
+            <tr>
+                <td>Student</td>
+                <td>$10</td>
+                <td>Valid student ID required</td>
+            </tr>
+            <tr>
+                <td>Member</td>
+                <td>$15</td>
+                <td>Member discount</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- Schedule -->
+        <h2>April Schedule</h2>
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Event</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>April 5</td>
+                <td>Easter Celebration</td>
+                <td><button onclick="showForm()">Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>April 15</td>
+                <td>Spring Exhibition</td>
+                <td><button onclick="showForm()">Buy Now</button></td>
+            </tr>
+            <tr>
+                <td>April 25</td>
+                <td>Taurus Celebration</td>
+                <td><button onclick="showForm()">Buy Now</button></td>
+            </tr>
+        </table>
+
+        <br>
+
+        <!-- Hidden Purchase Form -->
+        <form id="purchaseForm">
+
+            <h2>Purchase Tickets</h2>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="quantity">Number of Tickets:</label>
+            <input type="number" id="quantity" min="1" required>
+
+            <label for="selectedDate">Select Date:</label>
+            <input type="date" id="selectedDate" required>
+
+            <button type="button" onclick="alert('Redirecting to payment system.')">
+                Submit
+            </button>
+
+        </form>
+
+    </main>
+
+    <!-- FIGURE -->
+    <figure class="main_figure">
+        <figcaption>
+            Book your tickets and plan your visit to MonoMuse.
+        </figcaption>
+    </figure>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p id="copyYear"></p>
+    </footer>
+
+</div>
+
+</body>
+</html>

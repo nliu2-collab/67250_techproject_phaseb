@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Checkout</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js" defer></script>
+</head>
+
+<body onload="addYear()">
+    <div class="container">
+        <header class="header">
+            <img id="logo" src="../static/monomuselogo.png" alt="MonoMuse Museum Logo">
+            <p class="site-title">Checkout</p>
+        </header>
+        <nav class="nav_bar">
+            <a href="../index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="exhibitions.html">Exhibitions</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+        <main class="main">
+            <form>
+                <label>Name:</label>
+                <input type="text" name="name" required>
+                <label>Email:</label>
+                <input type="email" name="email" required>
+                <label>Ticket Quantity:</label>
+                <input type="number" min="1" required>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <figure class="main_figure">
+            <figcaption>Complete your checkout and get ready to visit MonoMuse.</figcaption>
+        </figure>
+        <footer class="footer">
+            <p id="copyYear"></p>
+        </footer>
+    </div>
+</body>
+</html>
